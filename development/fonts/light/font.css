@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'PFDinDisplayPro-Light';
+  src: url('PFDinDisplayPro-Light.eot');
+  src: url('PFDinDisplayPro-Light.woff') format('woff'),
+       url('PFDinDisplayPro-Light.ttf') format('truetype'),
+       url('PFDinDisplayPro-Light.svg#PFDinDisplayPro-Light') format('svg'),
+       url('PFDinDisplayPro-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

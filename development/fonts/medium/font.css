@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'PFDinDisplayPro-Medium';
+  src: url('PFDinDisplayPro-Medium.woff') format('woff'),
+       url('PFDinDisplayPro-Medium.ttf') format('truetype'),
+       url('PFDinDisplayPro-Medium.svg#PFDinDisplayPro-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFDinMedium';
+  src: url('PFDinMedium.eot');
+  src: url('PFDinMedium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
