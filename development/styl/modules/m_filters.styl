@@ -1,0 +1,220 @@
+.m_filters
+  background #25475d
+  background rgba(37, 71, 93, .9)
+  padding 15px 10px
+  @media screen and (min-width: lg)
+    padding-left 30px
+    padding-right 30px
+    margin-bottom 30px
+    border-radius $radius
+  > .total
+    color #fff
+    text-align center
+    font-size 24px
+    margin-bottom 15px
+    > .hidden-320
+      @media screen and (min-width: 480px)
+        display inline
+  .col-title
+    color $text-gray
+    font-size 14px
+    margin-bottom 5px
+    margin-top 10px
+    @media screen and (min-width: 480px)
+      height 20px
+  .section
+    text-align center
+    @media screen and (min-width: md)
+      text-align left
+    .radio-custom
+      float left
+      width 48%
+      margin-bottom 4%
+      @media screen and (min-width: 480px)
+        display inline-block
+        width auto
+        float none
+        margin-left 0 !important
+        margin-right 0 !important
+        font-size 14px
+        margin-bottom 0
+        span
+          padding-left 10px
+          padding-right 10px
+          @media screen and (min-width: 568px)
+            padding-left 15px
+            padding-right 15px
+      &:first-child
+        margin-right 4%
+      &:last-child
+        margin-left 4%
+      i
+        font-style normal
+      .short
+        @media screen and (min-width: 480px)
+          display none
+      .normal
+        display none
+        font-style normal
+        @media screen and (min-width: 480px)
+          display block
+  .rooms
+    .boxes
+      clearfix()
+      @media screen and (min-width: 568px)
+        padding-right 15px
+    .custom-checkbox
+      float left
+      height 40px
+      // width 28px
+      // margin-right 5px
+      width 22%
+      margin-right 4%
+      border-radius $radius
+      &:last-child
+        margin-right 0
+      @media screen and (min-width: 568px)
+        width 21.2%
+        margin-right 5%
+        @media screen and (min-width: lg)
+          width 30px
+        &:last-child
+          margin-right 0
+      > label
+        margin-bottom 0
+        display block
+        width 100%
+        height 100%
+        font-weight normal
+        span
+          border none
+          width 100%
+          height 100%
+          color #fff
+          line-height 40px
+          text-align center
+          font-size 15px
+          gradient-orange()
+          border-radius $radius
+      input:checked + label span
+        box-shadow none
+        background #b96f07
+  .price
+    .inps
+      clearfix()
+      position relative
+      padding-right 20px
+      @media screen and (min-width: md)
+        padding-right 40px
+      &:before
+        icon()
+        content '\e916'
+        position absolute
+        top 0
+        right 0
+        color $text-gray
+        font-size 15px
+        height 40px
+        line-height 40px
+        width 20px
+        text-align right
+        @media screen and (min-width: md)
+          text-align center
+          width 30px
+          right 10px
+    input
+      float left
+      width 48%
+      height 40px
+      line-height 40px
+      border 1px solid #fff
+      border-radius $radius
+      padding-left 15px
+      padding-right 15px
+      regular()
+      font-size 15px
+      @media screen and (min-width: 480px)
+        padding-left 5px
+        padding-right 5px
+      @media screen and (min-width: 568px)
+        padding-left 15px
+        padding-right 15px
+      &:first-child
+        margin-right 4%
+        @media screen and (min-width: lg)
+          margin-right 5px
+      &:focus
+        border-color $link
+  .locate
+    > .filters-select
+      margin-bottom 15px
+  .find
+    input
+      color #fff
+      border none
+      display inline-block
+      vertical-align middle
+      height 40px
+      line-height 40px
+      border-radius $radius
+      width 100%
+      gradient-green()
+  @media screen and (min-width: 480px)
+    .group
+      clearfix()
+      .type, .rooms, .price
+        width 33.333%
+        float left
+      .locate
+        clearfix()
+        float left
+        width 75%
+        .col-title
+          float left
+          width 100%
+        .filters-select
+          float left
+          width 46% !important
+          margin-right 4%
+      .find
+        float right
+        width 25%
+        padding-top 35px
+      .rooms
+        .col-title,
+        .boxes
+          padding-left 15px
+          padding-right 15px
+  @media screen and (min-width: md)
+    .group
+      .type
+        width 20%
+      .rooms
+        width 20%
+      .price
+        width 20%
+      .locate
+        width 30%
+      .find
+        width 10%
+  @media screen and (min-width: lg)
+    .group
+      .type
+        width 200px
+        padding-right 30px
+      .rooms
+        width 165px
+        .col-title,
+        .boxes
+          padding-left 0
+      .price
+        width 260px
+      .locate
+        width 345px
+        .filters-select
+          margin-right 5px
+          width 170px
+      .find
+        width 110px
+
+

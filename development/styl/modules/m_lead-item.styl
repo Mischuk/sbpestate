@@ -1,0 +1,162 @@
+.m_lead-item
+  position relative
+  margin-bottom 20px
+  &.slick-slide
+    margin-left 5px
+    margin-right 5px
+    @media screen and (min-width: 1024px)
+      margin-left 15px
+      margin-right 15px
+  &.compact
+    @media screen and (min-width: 568px)
+      height 260px
+    .description
+      padding-bottom 0
+      @media screen and (min-width: 568px)
+        height 80px
+
+  .image
+    display block
+    height 180px
+    width 100%
+    background-repeat no-repeat
+    background-position 50% 50%
+    background-size cover
+    border-radius $radius $radius 0 0
+    &.large
+      height 250px
+  .price
+    height 30px
+    line-height 30px
+    padding-left 15px
+    padding-right 30px
+    color #fff
+    position absolute
+    left 0
+    top 15px
+    background $red
+    font-size 18px
+    &:after
+      icon()
+      content '\e916'
+      color #fff
+      font-size 14px
+      line-height 30px
+      padding-left 5px
+      position absolute
+      right 15px
+      top 0
+  .description,
+  .footer
+    padding-left 15px
+    padding-right 15px
+  .description
+    position relative
+    padding-bottom 70px
+    border 1px solid $border
+    border-radius 0 0 $radius $radius
+    background #fff
+    &.type-rent:after,
+    &.type-sell:after,
+    &.type-short-rent:after
+      position absolute
+      right 15px
+      top -35px
+      width auto
+      color #fff
+      font-size 14px
+      line-height 20px
+      height 20px
+      padding-left 5px
+      padding-right 5px
+      border-radius $radius
+    &.type-rent:after
+      content 'Аренда'
+      background $green
+      background rgba(3, 179, 65, .9)
+    &.type-sell:after
+      content 'Продажа'
+      background $red
+      background rgba(198, 45, 29, .9)
+    &.type-short-rent:after
+      content 'Краткосрочная аренда'
+      background $blue
+      background rgba(1, 119, 197, .9)
+    .category
+      background $orange
+      color #fff
+      display inline-block
+      vertical-align middle
+      border-radius $radius
+      height 20px
+      line-height 20px
+      padding-left 5px
+      padding-right 5px
+      margin-top 8px
+      margin-bottom 8px
+      font-size 14px
+    .title
+      margin-bottom 8px
+      &:first-child
+        padding-top 10px
+      a
+        color $link
+        text-decoration underline
+        font-size 16px
+        &:hover, &:focus
+          text-decoration none
+    .intro
+      font-size 14px
+      line-height 20px
+      height 40px
+      // overflow hidden
+  .footer
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    padding-bottom 15px
+    .locate, .square
+      padding-top 5px
+    .square
+      position relative
+      float left
+      padding-left 25px
+      &:before
+        icon()
+        content '\e917'
+        position absolute
+        left 0
+        top 4px
+        font-size 20px
+        color #b4b4b4
+    .locate
+      position relative
+      float right
+      color #b4b4b4
+      padding-left 20px
+      &:before
+        icon()
+        content "\e909"
+        position absolute
+        left 0
+        top 4px
+        font-size 20px
+        color #b4b4b4
+    .footer-price
+      position relative
+      float left
+      padding-right 16px
+      medium()
+      font-size 18px
+      color #000000
+      &:before
+        icon()
+        content "\e916"
+        position absolute
+        right 0
+        top 4px
+        font-size 15px
+        color #b4b4b4
+
+

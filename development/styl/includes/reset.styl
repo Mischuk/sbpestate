@@ -27,6 +27,8 @@ body
 
 a
   text-decoration none
+  &:focus, &:hover
+    text-decoration none
 
 a:active,a:hover
   outline 0
@@ -175,11 +177,11 @@ table
   box-sizing inherit
   -moz-box-sizing inherit
   -webkit-box-sizing inherit
-
-*
   -webkit-tap-highlight-color rgba(0,0,0,0)
   -webkit-tap-highlight-color transparent
-
+  outline 0 !important
+*:focus
+  outline none !important
 ::-moz-selection
   background-color #000
   color #fff
@@ -190,23 +192,19 @@ table
 
 ::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder
-  color #999
-  font-style italic
+  color #b4b4b4
 
 ::-moz-placeholder,
 textarea::-moz-placeholder
-  color #999
-  font-style italic
+  color #b4b4b4
 
 :-ms-input-placeholder,
 textarea:-ms-input-placeholder
-  color #999
-  font-style italic
+  color #b4b4b4
 
 input:-moz-placeholder,
 textareainput:-moz-placeholder
-  color #999
-  font-style italic
+  color #b4b4b4
 
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder
@@ -223,4 +221,3 @@ textarea:focus::-moz-placeholder
 input:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder
   visibility hidden
-

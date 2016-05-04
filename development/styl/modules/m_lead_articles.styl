@@ -1,0 +1,24 @@
+.m_lead_articles
+  position relative
+  border-top 1px solid $border
+  @media screen and (min-width: 992px)
+    border-top none
+  .list
+    li
+      position relative
+      padding-left 30px
+      margin-bottom 25px
+      &:after
+        icon()
+        content '\e915'
+        position absolute
+        left 0
+        top 0
+        font-size 25px
+        color #a0a0a0
+      a
+        color $link
+        text-decoration underline
+        &:hover, &:focus
+          text-decoration none
+

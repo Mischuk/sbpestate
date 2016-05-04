@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="101.9 280 51.8 50.8" enable-background="new 101.9 280 51.8 50.8" xml:space="preserve">
+	 viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
 <g>
-	<path d="M141.8,330.9H103v-27l25.1-11.3l13.7,4.9V330.9z M105.1,328.7h34.7v-30l-11.6-4l-23,10.4V328.7z"/>
-	<rect x="126.9" y="294.4" width="2.1" height="35.4"/>
+	<path d="M464.9,648.3H6.5v-319L303,195.8l161.9,57.9V648.3z M31.3,622.3h410V267.8l-137.1-47.3L32.5,343.4v278.8H31.3z"/>
+	<rect x="288.9" y="217" width="24.8" height="418.2"/>
 	<g>
-		<rect x="114.1" y="298.5" transform="matrix(-0.2959 -0.9552 0.9552 -0.2959 -143.4156 507.0184)" width="2.1" height="15.7"/>
-		<rect x="114.2" y="305" transform="matrix(-0.206 -0.9785 0.9785 -0.206 -166.9566 489.894)" width="2.1" height="15.3"/>
-		<rect x="114.2" y="311.4" transform="matrix(-0.1051 -0.9945 0.9945 -0.1051 -189.8969 467.062)" width="2.1" height="15.1"/>
-		<rect x="107.7" y="324.3" width="15" height="2.1"/>
+		<rect x="137.5" y="265.8" transform="matrix(0.2959 0.9552 -0.9552 0.2959 448.0287 109.2698)" width="24.8" height="185.5"/>
+		<rect x="138.6" y="343" transform="matrix(0.206 0.9785 -0.9785 0.206 544.0135 196.3836)" width="24.8" height="180.8"/>
+		<rect x="138.1" y="417.6" transform="matrix(0.1051 0.9945 -0.9945 0.1051 638.6264 303.8748)" width="24.8" height="178.4"/>
+		<rect x="62" y="570.3" width="177.2" height="24.8"/>
 	</g>
-	<polygon points="153.7,330.9 136.4,330.9 136.4,328.7 151.6,328.7 151.6,287 137.2,282.4 123.4,288.4 123.4,295.5 121.3,295.5 
-		121.3,287.1 137,280 153.7,285.5 	"/>
-	<rect x="145.2" y="289.4" width="2.1" height="4.1"/>
-	<rect x="145.2" y="296.8" width="2.1" height="4.1"/>
-	<rect x="145.2" y="304.2" width="2.1" height="4.2"/>
-	<rect x="145.2" y="311.7" width="2.1" height="4.1"/>
-	<rect x="145.2" y="319.1" width="2.1" height="4.1"/>
+	<polygon points="605.5,648.3 401.1,648.3 401.1,622.3 580.7,622.3 580.7,129.6 410.6,75.3 247.5,146.1 247.5,230 222.7,230 
+		222.7,130.8 408.2,46.9 605.5,111.9 	"/>
+	<rect x="505.1" y="158" width="24.8" height="48.4"/>
+	<rect x="505.1" y="245.4" width="24.8" height="48.4"/>
+	<rect x="505.1" y="332.8" width="24.8" height="49.6"/>
+	<rect x="505.1" y="421.4" width="24.8" height="48.4"/>
+	<rect x="505.1" y="508.9" width="24.8" height="48.4"/>
 </g>
 </svg>

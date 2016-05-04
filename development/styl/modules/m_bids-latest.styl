@@ -1,0 +1,28 @@
+.m_bids-latest
+  padding-bottom 40px
+  .m_block-header
+     border-bottom 1px solid $border
+     margin-bottom 30px
+  .m_link-page-blue-button
+    margin-top 0
+  .m_block-header + .row + .row
+    display none
+  @media screen and (min-width: 992px)
+    .m_block-header + .row + .row
+      display block
+  .m_block-header + .row
+    > .col-xs-12
+      display none
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+        display block
+      @media screen and (min-width: 568px)
+        &:nth-child(5),
+        &:nth-child(6),
+        &:nth-child(7),
+        &:nth-child(8)
+          display block
+      @media screen and (min-width: 768px)
+        display block

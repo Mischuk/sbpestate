@@ -43,7 +43,7 @@ gulp.task('STYLES', function() {
     .pipe(plumber({ errorHandler: onError }))
     .pipe(sourcemaps.init())
     .pipe(stylus({
-      'include css': true,
+      'include css': false,
       compress: true
     }))
     .pipe(autoprefixer({
@@ -51,6 +51,13 @@ gulp.task('STYLES', function() {
     }))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("./development/css"))
+    .pipe(connect.reload());
+});
+
+// Vendor css
+gulp.task('VENDORCSS', function () {
+  gulp.src('./development/styl/includes/vendor.css')
+    .pipe(gulp.dest('./development/css/'))
     .pipe(connect.reload());
 });
 
@@ -67,7 +74,8 @@ gulp.task('watch', function () {
   gulp.watch(['development/scripts/*.js'], ['SCRIPTS']);
   gulp.watch(['development/styl/**/*.styl'], ['STYLES']);
   gulp.watch(['development/images/**/*'], ['IMAGES']);
+  gulp.watch(['development/styl/includes/vendor.css'], ['VENDORCSS']);
 });
 
 // Watching project files
-gulp.task('default', ['connect', 'watch', 'TEMPLATES', 'SCRIPTS', 'STYLES', 'IMAGES']);
+gulp.task('default', ['connect', 'watch', 'TEMPLATES', 'SCRIPTS', 'STYLES', 'IMAGES', 'VENDORCSS']);

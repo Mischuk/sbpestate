@@ -1,0 +1,54 @@
+.m_object
+  .header
+    margin-bottom 25px
+    .title
+      position relative
+      margin-bottom 20px
+      h2
+        padding 20px 0
+        font-size 24px
+      .price
+        .user-price,
+        .variable
+          display inline-block
+          vertical-align baseline
+        .user-price
+          font-size 20px
+          margin-right 10px
+        .variable
+          font-size 14px
+          color #646464
+    .bottom
+      .post
+        font-size 14px
+        color #b4b4b4
+      .right
+        > a
+          display inline-block
+          vertical-align middle
+          margin-top 5px
+          i
+            color #a0a0a0
+            &.icon-fav
+              font-size 20px
+              position relative
+              top 3px
+          span
+            color $link
+            text-decoration underline
+          &:hover, &:focus
+            span
+              text-decoration none
+            i
+              color $orange
+  .object-map
+    #map
+      width 100%
+      height 300px
+      @media screen and (min-width: 1200px)
+        height 500px
+  .object-image
+    margin-bottom 25px
+    img
+      width 100%
+      height auto

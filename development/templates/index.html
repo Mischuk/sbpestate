@@ -4,11 +4,1603 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-tap-highlight" content="no"/>
     <link href="../css/vendor.css" rel="stylesheet" media="all">
     <link href="../css/app.css" rel="stylesheet" media="all">
-    <title>Document</title>
+    <title>Главная</title>
 </head>
 <body>
+    <header class="m_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="left">
+                        <div class="logo"><a href="/"></a></div>
+                        <div class="slogan">Недвижимость в Санкт-Петербурге</div>
+                    </div>
+                    <div class="right">
+                        <div class="post-new">
+                            <a href="#"><i class="icon-add"></i> РАЗМЕСТИТЬ ОБЪЯВЛЕНИЕ</a>
+                        </div>
+                        <div class="user-signin">
+                            <a href="#"><i class="icon-login"></i> <span>Вход</span></a>
+                        </div>
+                        <div class="user-fav">
+                            <a href="#"><i class="icon-fav"></i> <span>Избранное (10)</span></a>
+                        </div>
+                        <div class="user-mobile-menu">
+                            <div class="hamburger">
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="m_lead-filters">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <h1>Вся недвижимость Петербурга</h1>
+                    <div class="m_filters">
+                        <div class="total">Продажа недвижимости <br>в Санкт-Петербурге <span class="hidden-320">&mdash;</span><br class="visible-320"> 1 529 612 объявлений</div>
+                        <form>
+                            <div class="group">
+                                <div class="section">
+                                    <label class="radio-custom">
+                                      <input name="filter-section" type="radio"/>
+                                      <span>АРЕНДА</span>
+                                    </label>
+                                    <label class="radio-custom">
+                                      <input name="filter-section" type="radio"/>
+                                      <span>ПРОДАЖА</span>
+                                    </label>
+                                    <label class="radio-custom">
+                                      <input name="filter-section" type="radio"/>
+                                      <span><i class="short">КРАТКОСРОЧНО</i><i class="normal">КРАТКОСРОЧНАЯ АРЕНДА</i></span>
+                                    </label>
+                                    <label class="radio-custom">
+                                      <input name="filter-section" type="radio"/>
+                                      <span>ЗАЯВКИ</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div class="type">
+                                    <div class="col-title">Тип:</div>
+                                    <select class="filters-select">
+                                      <optgroup label="Жилая">
+                                        <option value="type-1">Квартира</option>
+                                        <option value="type-2">Комната</option>
+                                        <option value="type-3">Загородный дом (Коттедж)</option>
+                                        <option value="type-4">Земельный участок</option>
+                                      </optgroup>
+                                      <optgroup label="Коммерческая">
+                                        <option value="type-5">Офисы</option>
+                                        <option value="type-6">Производства/Склады</option>
+                                        <option value="type-7">Торговля/услуги</option>
+                                        <option value="type-8">Участки/Здания/Имущественные комплексы</option>
+                                        <option value="type-9">Комплекс зданий</option>
+                                      </optgroup>
+                                    </select>
+                                </div>
+                                <div class="rooms">
+                                    <div class="col-title">Комнат:</div>
+                                    <div class="boxes">
+                                        <div class="custom-checkbox">
+                                          <input id="filters-rooms-1" type="checkbox" name="filters-rooms"/>
+                                          <label for="filters-rooms-1"><span>1</span></label>
+                                        </div>
+                                        <div class="custom-checkbox">
+                                          <input id="filters-rooms-2" type="checkbox" name="filters-rooms"/>
+                                          <label for="filters-rooms-2"><span>2</span></label>
+                                        </div>
+                                        <div class="custom-checkbox">
+                                          <input id="filters-rooms-3" type="checkbox" name="filters-rooms"/>
+                                          <label for="filters-rooms-3"><span>3</span></label>
+                                        </div>
+                                        <div class="custom-checkbox">
+                                          <input id="filters-rooms-4-and-more" type="checkbox" name="filters-rooms"/>
+                                          <label for="filters-rooms-4-and-more"><span>4+</span></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="col-title">Цена:</div>
+                                    <div class="inps">
+                                        <input class="text" type="number" placeholder="От">
+                                        <input class="text" type="number" placeholder="До">
+                                    </div>
+                                </div>
+                                <div class="locate">
+                                    <div class="col-title">Расположение:</div>
+                                    <select class="filters-select" multiple title="Район">
+                                        <option value="">Адмиралтейский</option>
+                                        <option value="">Василеостровский</option>
+                                        <option value="">Выборгский</option>
+                                        <option value="">Калининский</option>
+                                        <option value="">Кировский</option>
+                                        <option value="">Колпинский</option>
+                                        <option value="">Красногвардейский</option>
+                                        <option value="">Красносельский</option>
+                                        <option value="">Кронштадский</option>
+                                        <option value="">Курортный</option>
+                                        <option value="">Московский</option>
+                                        <option value="">Невский</option>
+                                        <option value="">Петроградский</option>
+                                        <option value="">Петродворцовый</option>
+                                        <option value="">Приморский</option>
+                                        <option value="">Пушкинский</option>
+                                        <option value="">Фрунзенский</option>
+                                        <option value="">Центральный</option>
+                                    </select>
+                                    <select class="filters-select" multiple title="Область">
+                                        <option value="">Бокситогорский</option>
+                                        <option value="">Волосовский</option>
+                                        <option value="">Волховский</option>
+                                        <option value="">Всеволожский</option>
+                                        <option value="">Выборгский</option>
+                                        <option value="">Гатчинский</option>
+                                        <option value="">Кингисеппский</option>
+                                        <option value="">Киришский</option>
+                                        <option value="">Кировский</option>
+                                        <option value="">Лодейнопольский</option>
+                                        <option value="">Ломоносовский</option>
+                                        <option value="">Лужский</option>
+                                        <option value="">Подпорожский</option>
+                                        <option value="">Приозерский</option>
+                                        <option value="">Сланцевский</option>
+                                        <option value="">Сосновоборский</option>
+                                        <option value="">Тихвинский</option>
+                                        <option value="">Тосненский</option>
+                                    </select>
+                                </div>
+                                <div class="find">
+                                    <input class="submit" type="submit" value="НАЙТИ">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="m_banner">
+                        <div class="full">
+                            <a href="#"><img src="http://placehold.it/1170x90/" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m_special-offers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="m_block-header">
+                        <h2 class="headling">СПЕЦПРЕДЛОЖЕНИЯ:</h2>
+                        <div class="m_tab-triggers">
+                            <a class="current" id="tab-trigger-offers-1" href="#">АРЕНДА</a>
+                            <a id="tab-trigger-offers-2" href="#">ПРОДАЖА</a>
+                            <a id="tab-trigger-offers-3" href="#"><i class="short">КРАТКОСРОЧНО</i><i class="normal">КРАТКОСРОЧНАЯ АРЕНДА</i></a>
+                        </div>
+                    </div>
+                    <div class="carousels-offers">
+                        <div class="mpc_preloader">
+                            <div class="mpc_preloader9"></div>
+                        </div>
+                        <div id="carousel-offers-1" class="carousel-offers current">
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="price">4 800 000</div>
+                                <div class="description type-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                    <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Выборгский</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/13.jpg')"></a>
+                                <div class="price">1 665 000</div>
+                                <div class="description type-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Советский пр.</a></div>
+                                    <div class="intro">Продажа квартир от застройщика с отделкой!</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/12.jpg')"></a>
+                                <div class="price">1 550</div>
+                                <div class="description type-rent">
+                                    <div class="category">Торговые услуги</div>
+                                    <div class="title"><a href="#">Садовая ул., 38</a></div>
+                                    <div class="intro">Аренда торговых и офисных помещений на Садовой улице</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="price">4 800 000</div>
+                                <div class="description type-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                    <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Выборгский</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/13.jpg')"></a>
+                                <div class="price">1 665 000</div>
+                                <div class="description type-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Советский пр.</a></div>
+                                    <div class="intro">Продажа квартир от застройщика с отделкой!</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/12.jpg')"></a>
+                                <div class="price">1 550</div>
+                                <div class="description type-rent">
+                                    <div class="category">Торговые услуги</div>
+                                    <div class="title"><a href="#">Садовая ул., 38</a></div>
+                                    <div class="intro">Аренда торговых и офисных помещений на Садовой улице</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carousel-offers-2" class="carousel-offers">
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/3.jpg')"></a>
+                                <div class="price">4 800 000</div>
+                                <div class="description type-sell">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                    <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Выборгский</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/4.jpg')"></a>
+                                <div class="price">1 665 000</div>
+                                <div class="description type-sell">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Советский пр.</a></div>
+                                    <div class="intro">Продажа квартир от застройщика с отделкой!</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/10.jpg')"></a>
+                                <div class="price">1 550</div>
+                                <div class="description type-sell">
+                                    <div class="category">Торговые услуги</div>
+                                    <div class="title"><a href="#">Садовая ул., 38</a></div>
+                                    <div class="intro">Аренда торговых и офисных помещений на Садовой улице</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="carousel-offers-3" class="carousel-offers">
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/15.jpg')"></a>
+                                <div class="price">4 800 000</div>
+                                <div class="description type-short-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                    <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Выборгский</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/14.jpg')"></a>
+                                <div class="price">1 665 000</div>
+                                <div class="description type-short-rent">
+                                    <div class="category">Квартира</div>
+                                    <div class="title"><a href="#">Советский пр.</a></div>
+                                    <div class="intro">Продажа квартир от застройщика с отделкой!</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                            <div class="m_lead-item">
+                                <a class="image large" href="#" style="background-image: url('../images/content/latest/11.jpg')"></a>
+                                <div class="price">1 550</div>
+                                <div class="description type-short-rent">
+                                    <div class="category">Торговые услуги</div>
+                                    <div class="title"><a href="#">Садовая ул., 38</a></div>
+                                    <div class="intro">Аренда торговых и офисных помещений на Садовой улице</div>
+                                </div>
+                                <div class="footer">
+                                    <div class="square">От 25 до 120 кв. м.</div>
+                                    <div class="locate">Рыбацкое</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_payment-fees">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="m_block-header">
+                        <h2 class="headling">ВЫПЛАТА КОМИССИОНЫХ</h2>
+                        <div class="m_all-button">
+                            <a href="#">Посмотреть все</a>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div class="row">
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                                <div class="m_lead-item">
+                                    <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                    <div class="description">
+                                        <div class="title"><a href="#">Продаю коттедж в тихом месте близко от города</a></div>
+                                    </div>
+                                    <div class="footer">
+                                        <div class="footer-price">4 800 000</div>
+                                        <div class="locate">Выборгский</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_link-page-button">
+                        <a href="#">Перейти в раздел</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_banner full">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <a href="#"><img src="http://placehold.it/1170x90/" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_objects_new">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-9">
+                    <div class="m_block-header">
+                        <h2 class="headling">НОВЫЕ ПРЕДЛОЖЕНИЯ:</h2>
+                        <div class="m_tab-triggers">
+                            <a class="current" id="tab-trigger-objects-1" href="#">АРЕНДА</a>
+                            <a id="tab-trigger-objects-2" href="#">ПРОДАЖА</a>
+                            <a id="tab-trigger-objects-3" href="#"><i class="short">КРАТКОСРОЧНО</i><i class="normal">КРАТКОСРОЧНАЯ АРЕНДА</i></a>
+                        </div>
+                    </div>
+
+                    <div class="objects-lists">
+                        <div class="mpc_preloader">
+                            <div class="mpc_preloader9"></div>
+                        </div>
+                        <div id="objects-rent" class="list current">
+                            <div class="row">
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="m_link-page-blue-button">
+                                    <a href="#">Перейти в раздел</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="objects-sell" class="list">
+                            <div class="row">
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-sell">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="m_link-page-blue-button">
+                                    <a href="#">Перейти в раздел</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="objects-short-rent" class="list">
+                            <div class="row">
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-6 col-md-4">
+                                    <div class="m_lead-item">
+                                        <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                        <div class="description type-short-rent">
+                                            <div class="category">Квартира</div>
+                                            <div class="title"><a href="#">Дунайский пр. 14, к. 1</a></div>
+                                            <div class="intro">Продажа квартир от застройщика! 1-3 к.кв</div>
+                                        </div>
+                                        <div class="footer">
+                                            <div class="footer-price">52 000</div>
+                                            <div class="locate">Выборгский</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="m_link-page-blue-button">
+                                    <a href="#">Перейти в раздел</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="visible-lg col-lg-3">
+                    <div class="m_feed-form">
+                        <form>
+                            <input class="email" type="email" placeholder="Получать заявки на e-mail">
+                            <input class="submit" type="submit" value="OK">
+                        </form>
+                    </div>
+                    <div class="m_sidebar-partnership">
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x200/" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x200/" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x200/" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x370/" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x200/" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="http://placehold.it/270x200/" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="#"><img src="http://placehold.it/370x90/" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="#"><img src="http://placehold.it/370x90/" alt=""></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="#"><img src="http://placehold.it/370x90/" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_bids-latest">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="m_block-header">
+                        <h2 class="headling left">ПОСЛЕДНИЕ ЗАЯВКИ</h2>
+                        <div class="m_all-button left">
+                            <a href="#">Посмотреть все</a>
+                        </div>
+                        <div class="m_feed-form right">
+                            <form>
+                                <input class="email" type="email" placeholder="Получать заявки на e-mail">
+                                <input class="submit" type="submit" value="OK">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Квартира</div>
+                                <div class="title"><a href="#">Снимем хорошую 2 к квартиру в Петергофе Только на длительный срок.</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Офисы</div>
+                                <div class="title"><a href="#">тел. 89030992402 Ирина</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Квартиры</div>
+                                <div class="title"><a href="#">СРОЧНО ! Семья русских с сыном 5 лет, коренные СПб, снимет на срок от 2 лет</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Офисы</div>
+                                <div class="title"><a href="#">Сниму комнату в Пушкине для пары</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Квартира</div>
+                                <div class="title"><a href="#">Снимем хорошую 2 к квартиру в Петергофе</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Квартира</div>
+                                <div class="title"><a href="#">Снимем хорошую 2 к квартиру в Петергофе Только на длительный срок.</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Офисы</div>
+                                <div class="title"><a href="#">тел. 89030992402 Ирина</a></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-4 col-md-3">
+                            <div class="m_bid-item">
+                                <div class="category">Квартиры</div>
+                                <div class="title"><a href="#">СРОЧНО ! Семья русских с сыном 5 лет, коренные СПб, снимет на срок от 2 лет</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <div class="row">
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Офисы</div>
+                                        <div class="title"><a href="#">Сниму комнату в Пушкине для пары</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Квартира</div>
+                                        <div class="title"><a href="#">Снимем хорошую 2 к квартиру в Петергофе</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Квартира</div>
+                                        <div class="title"><a href="#">Снимем хорошую 2 к квартиру в Петергофе Только на длительный срок.</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Офисы</div>
+                                        <div class="title"><a href="#">тел. 89030992402 Ирина</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Квартиры</div>
+                                        <div class="title"><a href="#">СРОЧНО ! Семья русских с сыном 5 лет, коренные СПб, снимет на срок от 2 лет</a></div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-568-6 col-sm-4 col-md-3 col-lg-4">
+                                    <div class="m_bid-item">
+                                        <div class="category">Офисы</div>
+                                        <div class="title"><a href="#">Сниму комнату в Пушкине для пары</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="visible-lg col-lg-3">
+                            <div class="m_banner">
+                                <a href="#"><img src="http://placehold.it/270x250/" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_link-page-blue-button">
+                        <a href="#">Перейти в раздел</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_services-official">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="m_block-header">
+                        <h2 class="headling left">БИЗНЕС УСЛУГИ ОТ КОМПАНИЙ</h2>
+                        <div class="m_all-button left">
+                            <a href="#">Посмотреть все</a>
+                        </div>
+                        <div class="m_service-new-button right">
+                            <a href="#"><i class="icon-add"></i> Добавить свою услугу</a>
+                        </div>
+                    </div>
+                    <div class="row list">
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-568-6 col-sm-6 col-md-4 col-lg-3">
+                            <div class="m_lead-item compact">
+                                <a class="image" href="#" style="background-image: url('../images/content/latest/8.jpg')"></a>
+                                <div class="description">
+                                    <div class="title"><a href="#">Подрядно-строительные организации</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="m_link-page-button">
+                        <a href="#">Перейти в раздел</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_banner full">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <a href="#"><img src="http://placehold.it/1170x90/" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_lead-short-category">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="icon blue">
+                        <i class="icon-pig"></i>
+                    </div>
+                    <div class="title">Разместить объявление бесплатно</div>
+                    <p>Простая регистрация на сайте, через аккаунт в социальных сетях!</p>
+                    <p>Преимущество: Скорость и Удобство. Теперь когда у Вас есть своя страница с Вашими Объектами, показывайте ее Клиентам и Партнерам просто назвав свой id на сайт</p>
+                    <div class="detail blue">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="icon green">
+                        <i class="icon-money"></i>
+                    </div>
+                    <div class="title">Платные объявления</div>
+                    <p>Простая регистрация на сайте, через аккаунт в социальных сетях!</p>
+                    <p>Преимущество: Скорость и Удобство. Теперь когда у Вас есть своя страница с Вашими Объектами, показывайте ее Клиентам и Партнерам просто назвав свой id на сайт</p>
+                    <div class="detail green">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="icon orange">
+                        <i class="icon-partnership"></i>
+                    </div>
+                    <div class="title">Партнерство</div>
+                    <p>Простая регистрация на сайте, через аккаунт в социальных сетях!</p>
+                    <p>Преимущество: Скорость и Удобство. Теперь когда у Вас есть своя страница с Вашими Объектами, показывайте ее Клиентам и Партнерам просто назвав свой id на сайт</p>
+                    <div class="detail orange">
+                        <a href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_banner full">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <a href="#"><img src="http://placehold.it/1170x90/" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m_lead_articles">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <div class="m_block-header">
+                        <h2 class="headling">СТАТЬИ О НЕДВИЖИМОСТИ СПБ</h2>
+                    </div>
+                    <div class="list">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <ul>
+                                    <li><a href="#">Как проверить юридическую чистоту квартиры?</a></li>
+                                    <li><a href="#">Правовые новшества на рынке недвижимости в 2016 г.</a></li>
+                                    <li><a href="#">Продажа ипотечной недвижимости Санкт-Петербург</a></li>
+                                    <li><a href="#">Определение недвижимого имущества</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <ul>
+                                    <li><a href="#">Элитная недвижимость Санкт-Петербурга</a></li>
+                                    <li><a href="#">Обзор недвижимости Санкт-Петербурга. Перспективы 2015-2016</a></li>
+                                    <li><a href="#">Цена риска, или схемы обмана на рынке недвижимости Петербурга</a></li>
+                                    <li><a href="#">Загородное жилье Санкт-Петербурга 2015</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4">
+                                <ul>
+                                    <li><a href="#">Аренда квартир, складов, офисов</a></li>
+                                    <li><a href="#">Оформление покупки и продажи квартиры в Санкт-Петербурге</a></li>
+                                    <li><a href="#">Загородный дом в Ленинградской области: бытовое обустройство и правовые вопросы</a></li>
+                                    <li><a href="#">Новостройки vs вторичный рынок: «за» и «против»</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="m_footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-3">
+                    <div class="title">О нас</div>
+                    <p>Spbestate.info одна из старейших досок объявлений Петербурга по поиску недвижимости. Мы начали свою работу в 2003 г.</p>
+                    <p>Основная масса объявлений, подается частными лицами, и Вы имеете возможность снять или купить квартиру без посредников.</p>
+                    <p><a href="#">Контакты</a></p>
+                </div>
+                <div class="col-md-3 visible-lg visible-md">
+                    <div class="title">Новости</div>
+                    <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
+    
+                    <!-- VK Widget -->
+                    <div id="vk_groups"></div>
+                    <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 1, width: "220", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 20003922);
+                    </script>
+                </div>
+                <div class="col-md-3 visible-lg visible-md">
+                    <div class="title">Жилая</div>
+                    <ul class="list">
+                        <li><a href="#">Снять квартиру, комнату</a></li>
+                        <li><a href="#">Посуточная аренда квартир</a></li>
+                        <li><a href="#">Купить квартиру, комнату</a></li>
+                        <li><a href="#">Заявки на аренду квартиры</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 visible-lg visible-md">
+                    <div class="title">Коммерческая</div>
+                    <ul class="list">
+                        <li><a href="#">Аренда офис, склад, помещение</a></li>
+                        <li><a href="#">Аренда банкетные, конференц. залы</a></li>
+                        <li><a href="#">Продажа офис, помещение, участок</a></li>
+                        <li><a href="#">Заявки, тендеры</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-8 col-sm-6">
+                    <div class="copyright">© Copyright 2003-2015. <br>All rights reserved. <a href="#" class="rambler"></a></div>
+                </div>
+                <div class="col-xs-4 col-sm-6">
+                    <div class="socials">
+                        <a href="#" class="facebook icon-fb"></a>
+                        <a href="#" class="twitter icon-tt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../scripts/plugins.js"></script>
     <script src="../scripts/app.js"></script>
 </body>

@@ -1,0 +1,88 @@
+.m_all-button
+  float right
+  margin-top 20px
+  @media screen and (max-width: 768px)
+    display none
+  a
+    display inline-block
+    vertical-align middle
+    padding-left 15px
+    padding-right 15px
+    color #fff
+    text-decoration none
+    height 26px
+    line-height 26px
+    border-radius $radius
+    gradient-blue()
+    &:hover, &:focus
+      background #04558a
+  &.left
+    float left
+
+.m_link-page-button
+  margin-top 10px
+  a
+    display block
+    margin-left auto
+    margin-right auto
+    width 220px
+    height 40px
+    border 1px solid #fff
+    border-radius $radius
+    color #fff
+    font-size 14px
+    text-transform uppercase
+    line-height 38px
+    text-align center
+    &:hover, &:focus
+      background #fff
+      color $link
+
+.m_link-page-blue-button
+  margin-top 10px
+  a
+    display block
+    margin-left auto
+    margin-right auto
+    width 220px
+    height 40px
+    border 1px solid $link
+    border-radius $radius
+    color $link
+    font-size 14px
+    text-transform uppercase
+    line-height 38px
+    text-align center
+    &:hover, &:focus
+      background $link
+      color #fff
+
+.m_service-new-button
+  &.right
+    float right
+    margin-top 20px
+  a
+    display inline-block
+    vertical-align middle
+    height 26px
+    line-height 26px
+    padding-left 3px
+    padding-right 3px
+    font-size 12px
+    text-decoration none
+    color #fff
+    border-radius $radius
+    gradient-green()
+    @media screen and (min-width: sm)
+      height 26px
+      line-height 26px
+      padding-left 15px
+      padding-right 15px
+      font-size 14px
+      i
+        display inline-block
+        vertical-align middle
+        font-size 22px
+        position relative
+        top -1px
+        margin-right 5px

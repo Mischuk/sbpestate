@@ -1,0 +1,67 @@
+.m_footer
+  color $text-light
+  a
+    color $text-light
+    text-decoration underline
+    display inline-block
+    vertical-align middle
+    &:hover, &:focus
+      text-decoration none
+  .title
+    color #90a4a4
+    text-transform uppercase
+    padding 20px 0
+  .row:first-child
+    @media screen and (min-width: md)
+      height 339px
+  .row + .row
+    border-top 1px solid #31414c
+    padding-top 10px
+    padding-bottom 10px
+    @media screen and (min-width: 480px)
+      padding-top 0
+      padding-bottom 0
+      height 64px
+      line-height 64px
+    @media screen and (min-width: md)
+      height 80px
+      line-height 70px
+      padding-top 5px
+      padding-bottom 5px
+  .socials
+    text-align right
+    a
+      text-decoration none
+      font-size 40px
+      color #90a4a4
+      &:hover
+        color $text-light
+    .facebook
+      margin-right 10px
+  .copyright
+    br
+      @media screen and (min-width: 480px)
+        display none
+    .rambler
+      @media screen and (min-width: md)
+        display inline-block
+        vertical-align middle
+        width 88px
+        height 31px
+        margin-left 10px
+        background url("../images/rambler.jpg") no-repeat 0 0
+  .list
+    @media screen and (min-width: md)
+      li
+        position relative
+        margin-bottom 20px
+        padding-left 10px
+        &:before
+          content ''
+          width 2px
+          height 2px
+          position absolute
+          left 0
+          top 12px
+          margin-top -1px
+          background #90a4a4

@@ -1,4 +1,28 @@
 //======================================//
+sm = 768px
+md = 992px
+lg = 1200px
+//======================================//
+
+$dark-blue = #1a2b38
+$text-light = #ebf0f0
+$text = #505050
+$text-gray = #b4b4b4
+$link = #00a6ee
+$blue = #0177c5
+$white = #fff
+$black = #000
+$orange = #f8960b
+$green = #03b341
+$red = #c62d1d
+
+
+$border = #ebf0f0
+$bg-gray = #fafafa
+
+
+$radius = 5px
+//======================================//
 
 clearfix()
   &:before
@@ -19,10 +43,73 @@ font(fz, lh)
   font-size fz
   line-height lh
 
-//======================================//
+light()
+  font-family 'PFDinDisplayPro-Light'
+medium()
+  font-family 'PFDinDisplayPro-Medium'
+regular()
+  font-family 'PFDinDisplayPro-Regular'
 
-$min-width = 960px
-$footer-height = 100px
-$footer-margin-top = 50px
+icon()
+  font-family 'spbestate' !important
+  speak none
+  font-style: normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
 
-//======================================//
+
+gradient-green()
+  background: $green;
+  background: rgba(0,204,71,1);
+  background: -moz-linear-gradient(top, rgba(0,204,71,1) 0%, rgba(3,179,64,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,204,71,1)), color-stop(100%, rgba(3,179,64,1)));
+  background: -webkit-linear-gradient(top, rgba(0,204,71,1) 0%, rgba(3,179,64,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,204,71,1) 0%, rgba(3,179,64,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,204,71,1) 0%, rgba(3,179,64,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,204,71,1) 0%, rgba(3,179,64,1) 100%);
+  &:hover
+    background #038430
+
+gradient-orange()
+  background: $orange;
+  background: rgba(251,180,80,1);
+  background: -moz-linear-gradient(top, rgba(251,180,80,1) 0%, rgba(248,148,7,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,180,80,1)), color-stop(100%, rgba(248,148,7,1)));
+  background: -webkit-linear-gradient(top, rgba(251,180,80,1) 0%, rgba(248,148,7,1) 100%);
+  background: -o-linear-gradient(top, rgba(251,180,80,1) 0%, rgba(248,148,7,1) 100%);
+  background: -ms-linear-gradient(top, rgba(251,180,80,1) 0%, rgba(248,148,7,1) 100%);
+  background: linear-gradient(to bottom, rgba(251,180,80,1) 0%, rgba(248,148,7,1) 100%);
+
+gradient-gray()
+  background: #eaeaea
+  background: rgba(249,249,249,1);
+  background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(220,220,220,1)));
+  background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+  background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+  background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+  background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(220,220,220,1) 100%);
+
+
+gradient-blue()
+  background: rgba(22,148,232,1);
+  background: -moz-linear-gradient(top, rgba(22,148,232,1) 0%, rgba(1,119,198,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(22,148,232,1)), color-stop(100%, rgba(1,119,198,1)));
+  background: -webkit-linear-gradient(top, rgba(22,148,232,1) 0%, rgba(1,119,198,1) 100%);
+  background: -o-linear-gradient(top, rgba(22,148,232,1) 0%, rgba(1,119,198,1) 100%);
+  background: -ms-linear-gradient(top, rgba(22,148,232,1) 0%, rgba(1,119,198,1) 100%);
+  background: linear-gradient(to bottom, rgba(22,148,232,1) 0%, rgba(1,119,198,1) 100%);
+
+gradient-light()
+  background: #e9e9e9;
+  background: rgba(249,249,249,1);
+  background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(221,221,221,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249,249,249,1)), color-stop(100%, rgba(221,221,221,1)));
+  background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(221,221,221,1) 100%);
+  background: -o-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(221,221,221,1) 100%);
+  background: -ms-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(221,221,221,1) 100%);
+  background: linear-gradient(to bottom, rgba(249,249,249,1) 0%, rgba(221,221,221,1) 100%);

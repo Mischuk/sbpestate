@@ -1,0 +1,28 @@
+.m_special-offers
+  position relative
+  .slick-arrow
+    top 105px
+  .carousels-offers
+    height 450px
+    @media screen and (min-width: 568px)
+      height 490px
+  .mpc_preloader
+    margin-top -60px
+    opacity 0
+    &.show
+      opacity 1
+  .carousel-offers
+    display block !important
+    height 0 !important
+    overflow hidden
+    &.current
+      display block !important
+      height auto !important
+  @media screen and (min-width: 1024px)
+    > .container-fluid
+      > .row > .col-xs-12
+        padding-left 0
+        padding-right 0
+        .m_block-header
+          padding-left 15px
+          padding-right 15px

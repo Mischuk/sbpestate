@@ -1,0 +1,251 @@
+.headling
+  medium()
+  display block
+  font-size 24px
+  margin-bottom 15px
+  padding-top 20px
+  text-align center
+  @media screen and (min-width: 768px)
+    display inline-block
+    vertical-align middle
+    text-align left
+  &.left
+    float left
+    margin-right 30px
+// Radios
+.radio-custom
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  -o-user-select none
+  user-select none
+  cursor pointer
+  text-align center
+  regular()
+  & > input[type=radio]
+    display none
+  & > span
+    display block
+    font-weight normal
+    color #fff
+    height 34px
+    line-height 34px
+    padding-left 20px
+    padding-right 20px
+    border-radius $radius
+    gradient-blue()
+  & > input[type=radio]:checked
+    & + span
+      background #04558a
+
+// Checkboxes
+input[type="checkbox"]
+  display none
+  & + label span
+    display inline-block
+    width 20px
+    height 20px
+    vertical-align middle
+    border 1px solid black
+    cursor pointer
+input[type="checkbox"] + label
+  cursor pointer
+  -webkit-user-select none
+  -moz-user-select none
+  -ms-user-select none
+  -o-user-select none
+  user-select none
+input[type="checkbox"]:checked
+  & + label span
+      background black
+      box-shadow inset 0 0 0 2px white
+
+
+// Custom scroll
+.dropdown-menu.inner
+  position relative !important
+// Slick dots
+.slick-dots
+  text-align center
+  li
+    display inline-block
+    vertical-align middle
+    width 12px
+    height 12px
+    margin-left 7px
+    margin-right 7px
+    button
+      padding 0
+      margin 0
+      border-radius 50%
+      text-indent -9999px
+      border 3px solid #a0a0a0
+      display block
+      width 100%
+      height 100%
+      background none
+    &.slick-active
+      width 16px
+      height 16px
+      button
+        border-color $link
+// Slick arrows
+.slick-arrow
+  display block
+  position absolute
+  z-index 10
+  top 105px
+  width 40px
+  height 40px
+  border none
+  border-radius 50%
+  border 1px solid rgba(221,221,221,1)
+  gradient-light()
+  @media screen and (min-width: 1024px)
+    width 45px
+    height 45px
+    top 110px
+    top 65px
+  i
+    display inline-block
+    vertical-align middle
+    text-align center
+    position relative
+    top -1px
+    &:before
+      color #a0a0a0
+    @media screen and (min-width: 1024px)
+      top -2px
+  &:hover, &:focus
+    gradient-blue()
+    border-color #1694e8
+    i, i:before
+      color #fff
+
+  &.slick-prev
+    left 15px
+    @media screen and (min-width: 1024px)
+      left 0
+    i
+      display inline-block
+      transform rotate(180deg)
+  &.slick-next
+    right 15px
+    @media screen and (min-width: 1024px)
+      right 0
+
+//Custom select
+select
+  visibility hidden
+.bootstrap-select
+  width 100% !important
+  .dropdown-menu > li > a
+    white-space normal
+  .dropdown-menu .divider
+    background none
+  .dropdown-toggle
+    regular()
+    padding 0 30px 0 15px
+    height 40px
+    line-height 40px
+    border 1px solid #fff
+    border-radius $radius
+    font-size 15px
+    &:hover, &:focus
+      background #fff
+    > span
+      text-overflow ellipsis
+      overflow hidden
+      white-space nowrap
+    .caret
+      border none
+      height 100%
+      width 20px
+      top 0 !important
+      right 0 !important
+      margin-top 0 !important
+      &:after
+        icon()
+        content '\e903'
+        position absolute
+        left 0
+        top 0
+        color $text-gray
+        line-height 40px
+        vertical-align middle
+  .dropdown-menu>li>a:focus,
+  .dropdown-menu>li>a:hover
+    background none !important
+  .dropdown-menu
+    li
+      a.opt
+        &:hover, &:focus
+          background none !important
+  &.btn-group
+    .dropdown-menu
+      li
+        &:focus
+          outline none !important
+        a.opt
+          padding-left 20px
+          padding-top 5px
+          padding-bottom 5px
+  &.open
+    .dropdown-toggle
+      background #fff !important
+      border 1px solid $link !important
+      box-shadow none !important
+    .dropdown-menu
+      max-width 100%
+      @media screen and (min-width: 480px)
+        max-width 240px
+        min-width 240px
+        width 240px
+      &.open
+        border 1px solid $link !important
+  &.show-tick
+    .dropdown-menu
+      li
+        &.selected
+          a
+            span.check-mark
+              border-color $green
+              margin-top -8px !important
+              right auto
+              &:before
+                opacity 1
+                transform scale(1) rotate(0)
+        a
+          position relative
+          padding-left 35px
+          padding-top 5px
+          padding-bottom 5px
+          span.check-mark
+            anim()
+            display block !important
+            position absolute
+            left 10px
+            top 50%
+            width 16px
+            height 16px
+            margin-top -(@height/2)
+            border-radius $radius
+            border 1px solid #c8c8c8
+            z-index 10
+            &:before
+              anim()
+              icon()
+              content "\e90f"
+              font-size 8px
+              color $green
+              position absolute
+              left 0
+              top 0
+              width 100%
+              height 100%
+              text-align center
+              line-height 16px
+              opacity 0
+              transform scale(0.5) rotate(45deg)
+
+

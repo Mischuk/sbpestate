@@ -1,0 +1,52 @@
+.m_lead-short-category
+  position relative
+  padding-top 20px
+  text-align center
+  p
+    margin 0
+  .icon
+    width 140px
+    height 140px
+    line-height 180px
+    border-radius 50%
+    margin-left auto
+    margin-right auto
+    background #fafafa
+    text-align center
+    margin-bottom 25px
+    &.blue
+      color $link
+    &.orange
+      color $orange
+    &.green
+      color $green
+    i
+      font-size 60px
+  .title
+    margin-bottom 25px
+    font-size 22px
+  .detail
+    margin-top 25px
+    width 150px
+    height 36px
+    line-height 36px
+    margin-bottom 30px
+    margin-left auto
+    margin-right auto
+    border-radius $radius
+    a
+      display block
+      width 100%
+      height 100%
+      color #fff
+      border-radius $radius
+    &.blue
+      gradient-blue()
+      &:hover, &:focus
+        background #04558a
+    &.green
+      gradient-green()
+    &.orange
+      gradient-orange()
+      &:hover, &:focus
+        background #b96f07

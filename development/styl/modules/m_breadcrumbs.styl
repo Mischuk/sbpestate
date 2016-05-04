@@ -1,0 +1,57 @@
+.m_breadcrumbs
+  background #25475d
+  height 40px
+  width 100%
+  overflow hidden
+  a, span
+    color #ebf0f0
+  a
+    text-decoration underline
+    &:hover, &:focus
+      text-decoration none
+  li
+    display inline-block
+    vertical-align middle
+  ul.visible-xs
+    display table !important
+    height 40px
+    @media screen and (min-width: 768px)
+      display none !important
+    li
+      display table-cell
+      vertical-align middle
+      a
+        position relative
+        medium()
+        padding-left 30px
+        font-size 20px
+        text-decoration none
+        &:after
+          icon()
+          content '\e914'
+          position absolute
+          left 0
+          top 3px
+          font-size 16px
+          transform rotate(180deg)
+  ul.normal
+    overflow hidden
+    height 40px
+    line-height 40px
+    li
+      position relative
+      margin-right 30px
+      &:last-child
+        margin-right 0
+        &:after
+          display none
+      &:after
+        icon()
+        content '\e914'
+        position absolute
+        top 0
+        line-height 40px
+        right -20px
+        font-size 10px
+        color #9c9d9e
+        font-weight normal
