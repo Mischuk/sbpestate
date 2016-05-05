@@ -182,4 +182,25 @@ $(document).ready(function() {
             }
         ]
     });
+
+    function tel() {
+        $('[data-tel="hidden"]').each(function(){
+            var tel = $(this).text();
+            var datatel = $(this).attr('data-last', tel);
+            var h = tel.substring( 0, tel.length - 5 );
+            var xx = "XX-XX";
+            $(this).text(h).append(xx);
+            // console.log(tel);
+
+        });
+        $('#show-tel').on('click', function(){
+            $('[data-tel="hidden"]').each(function(){
+                var cur = $(this).attr('data-last');
+                $(this).text(cur);
+            });
+            $(this).hide();
+        });
+    };
+    tel();
+
 });

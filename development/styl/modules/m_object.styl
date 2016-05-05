@@ -4,10 +4,25 @@
     .title
       position relative
       margin-bottom 20px
+      @media screen and (min-width: 768px)
+        margin-bottom 0
       h2
         padding 20px 0
         font-size 24px
+        @media screen and (min-width: 768px)
+          padding-right 160px
+        @media screen and (min-width: 1200px)
+          padding-top 0
       .price
+        @media screen and (min-width: 768px)
+          width 160px
+          position absolute
+          right 0
+          top 0
+          padding-top 20px
+          text-align right
+        @media screen and (min-width: 1200px)
+          padding-top 0
         .user-price,
         .variable
           display inline-block
@@ -19,14 +34,35 @@
           font-size 14px
           color #646464
     .bottom
+      clearfix()
       .post
         font-size 14px
         color #b4b4b4
+        line-height 24px
+        display inline-block
+        vertical-align middle
+        @media screen and (min-width: 992px)
+          float left
+      br
+        display block
+        @media screen and (min-width: 768px)
+          display none
       .right
+        @media screen and (min-width: 992px)
+          float right
         > a
           display inline-block
           vertical-align middle
           margin-top 5px
+          font-size 14px
+          @media screen and (min-width: 768px)
+            margin-right 15px
+          @media screen and (min-width: 992px)
+            margin-top 0
+            margin-right 0
+            margin-left 15px
+
+
           i
             color #a0a0a0
             &.icon-fav
@@ -42,6 +78,7 @@
             i
               color $orange
   .object-map
+    margin-bottom 20px
     #map
       width 100%
       height 300px
@@ -52,3 +89,225 @@
     img
       width 100%
       height auto
+  .object-description
+    margin-bottom 20px
+    .desc-title
+      border-bottom 1px solid $border
+      padding-bottom 5px
+      margin-bottom 15px
+      i
+        display inline-block
+        vertical-align middle
+        width 30px
+        height 23px
+        line-height 23px
+        color $text-gray
+        &.icon-object
+          font-size 28px
+        &.icon-location
+          font-size 18px
+        &.icon-desc
+          font-size 24px
+        &.icon-deal
+          font-size 28px
+      span
+        display inline-block
+        vertical-align middle
+        medium()
+        font-size 20px
+    .desc-table
+      .green
+        color $green
+      p
+        font-size 16px
+      .tr
+        padding 5px 0
+        cursor default
+        clearfix()
+        &:hover
+          background #fafafa
+          .ls
+            border-bottom-color transparent
+          .ls span:after
+            opacity 0
+      .ls, .td
+        float left
+        width 50%
+      .td
+        medium()
+        padding-left 5px
+        font-size 15px
+        line-height 15px
+        .icon-ok
+          color $green
+        .icon-no
+          color $red
+      .ls
+        line-height 15px
+        border-bottom 1px dotted $border
+        font-size 15px
+        color #505050
+        span
+          position relative
+          display inline
+          vertical-align middle
+          line-height 16px
+          &:after
+            content ''
+            position absolute
+            left 0
+            bottom -2px
+            width 100%
+            height 2px
+            background #fff
+    .obj-detail,
+    .obj-address,
+    .obj-deal,
+    .obj-desc-large
+      margin-bottom 30px
+  .object-person
+    background #fafafa
+    border 1px solid $border
+    border-radius $radius
+    overflow hidden
+    padding 15px 20px
+    margin-bottom 20px
+    .remark
+      color #505050
+      font-size 14px
+    .logo
+      margin-bottom 30px
+      img
+        max-width 80px
+        max-height 80px
+        width 80px
+        margin-left auto
+        margin-right auto
+        display block
+        border 1px solid $border
+        @media screen and (min-width: 420px)
+          display inline
+      span
+        medium()
+        font-size 20px
+        display block
+        text-align center
+        @media screen and (min-width: 420px)
+          display inline
+    .user-data
+      position relative
+      .image
+        position absolute
+        left 0
+        top 0
+        width 80px
+        height 80px
+        border-radius 50%
+        background-repeat no-repeat
+        background-position 50% 50%
+        background-size cover
+      .name, .tel, .show-tel
+        padding-left 100px
+      .name
+        font-size 15px
+        margin-bottom 5px
+        span
+          display block
+          @media screen and (min-width: 420px)
+            display inline
+      .tel
+        medium()
+        font-size 18px
+        @media screen and (min-width: 568px)
+          font-size 20px
+      .show-tel
+        margin-top 5px
+        a
+          display block
+          color #fff
+          border-radius $radius
+          height 28px
+          line-height 28px
+          padding-left 5px
+          padding-right 5px
+          font-size 14px
+          text-align center
+          gradient-blue()
+          @media screen and (min-width: 360px)
+            width 170px
+          &:hover, &:focus
+            background #04558a
+      .options
+        padding 20px 0 10px 0
+        clearfix()
+        @media screen and (min-width: 992px)
+          padding-top 10px
+          padding-bottom 0
+        .hamburger
+          display inline-block
+          vertical-align middle
+          width 12px
+          height 10px
+          position relative
+          margin 0 auto
+          top -1px
+          span
+            display block
+            position absolute
+            height 2px
+            width 100%
+            background #a0a0a0
+            opacity 1
+            left 0
+            transform rotate(0deg)
+            transition .25s ease-in-out
+            &:nth-child(1)
+              top 0
+            &:nth-child(2)
+              top 4px
+            &:nth-child(3)
+              top 8px
+        > div
+          @media screen and (min-width: 480px)
+            margin-bottom 10px
+            &.send
+              float left
+            &.all-objs
+              float right
+          @media screen and (min-width: 480px)
+            margin-bottom 10px
+            &.send
+              float none
+              a
+                padding-bottom 0
+            &.all-objs
+              float none
+              a
+                padding-bottom 0
+          @media screen and (min-width: 992px)
+            margin-bottom 10px
+            &.send
+              margin-bottom 0
+              float left
+            &.all-objs
+              margin-bottom 0
+              float right
+        a
+          display inline-block
+          vertical-align middle
+          padding 5px 0
+          i
+            color #a0a0a0
+            font-size 18px
+            position relative
+            top 2px
+          span
+            color $link
+            text-decoration underline
+          &:hover
+            i
+              color $orange
+            .hamburger span
+              background $orange
+            span
+              text-decoration none
